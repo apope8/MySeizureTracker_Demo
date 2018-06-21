@@ -4,10 +4,8 @@ import com.mySeizureTracker.Entity.Seizures;
 import com.mySeizureTracker.Service.SeizureService;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 
@@ -31,6 +29,18 @@ public class SeizureController {
     public Seizures getSeizureById(@PathVariable("id") int id){     //path variable retrieves the id entered into the url and assigns it to the int id variable
         return seizureService.getSeizureById(id);
     }
+
+    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+    public void deleteSeizureById(@PathVariable("id") int id){
+        seizureService.deleteSeizureById(id);
+    }
+
+    @RequestMapping(method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
+    public void updateSeizure(@RequestBody Seizures seizure){
+        seizureService.updateSeizure(seizure);
+    }
+
+
 
 
 }

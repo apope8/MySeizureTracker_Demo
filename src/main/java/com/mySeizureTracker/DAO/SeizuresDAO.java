@@ -62,6 +62,19 @@ public class SeizuresDAO {
     }
 
 
+    public void deleteSeizureById(int id) {
+        this.seizures.remove(id);
+    }
+
+    public void updateSeizure(Seizures seizure){
+        Seizures s = seizures.get(seizure.getId());
+        s.setSeizureType(seizure.getSeizureType());
+        s.setSeizureDate(seizure.getSeizureDate());
+        s.setTimeOfDay(seizure.getTimeOfDay());
+        s.setTrigger(seizure.getTrigger());
+        s.setDescription(seizure.getDescription());
+        seizures.put(s.getId(), seizure);
+    }
 
 }
 

@@ -28,4 +28,11 @@ public class SeizureService {
     }
 
 
+    public void deleteSeizureById(int id) {
+        this.seizuresDAO.deleteSeizureById(id);
+    }
+
+    public void updateSeizure(Seizures seizure){
+        this.seizuresDAO.updateSeizure(seizure);
+    }
 }
