@@ -1,6 +1,7 @@
 package com.mySeizureTracker.DAO;
 
 import com.mySeizureTracker.Entity.Seizures;
+import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -12,6 +13,7 @@ import java.util.Map;
  * It provides an interface to a database for use with the app
  */
 
+@Repository             //this lets spring know that this class is the storage
 public class SeizuresDAO {
 
     private static Map<Integer, Seizures> seizures;
