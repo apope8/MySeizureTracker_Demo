@@ -57,7 +57,7 @@ public class SeizuresDAO {
     }
 
     //return a seizure by passing in its id
-    public Seizures getStudentById(int id){
+    public Seizures getSeizureById(int id){
         return this.seizures.get(id);
     }
 
@@ -67,15 +67,20 @@ public class SeizuresDAO {
     }
 
     public void updateSeizure(Seizures seizure){
+
         Seizures s = seizures.get(seizure.getId());
+        s.setId(seizure.getId());
         s.setSeizureType(seizure.getSeizureType());
         s.setSeizureDate(seizure.getSeizureDate());
         s.setTimeOfDay(seizure.getTimeOfDay());
         s.setTrigger(seizure.getTrigger());
         s.setDescription(seizure.getDescription());
-        seizures.put(s.getId(), seizure);
+        seizures.put(seizure.getId(),seizure);
     }
 
+    public void insertSeizure(Seizures seizures) {
+        this.seizures.put(seizures.getId(), seizures);
+    }
 }
 
 

@@ -36,8 +36,13 @@ public class SeizureController {
     }
 
     @RequestMapping(method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void updateSeizure(@RequestBody Seizures seizure){
-        seizureService.updateSeizure(seizure);
+    public void updateSeizure(@RequestBody Seizures seizures){
+        seizureService.updateSeizure(seizures);
+    }
+
+    @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+    public void insertSeizure(@RequestBody Seizures seizures){
+        seizureService.insertSeizure(seizures);
     }
 
 

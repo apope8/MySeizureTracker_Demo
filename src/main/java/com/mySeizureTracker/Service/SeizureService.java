@@ -24,7 +24,7 @@ public class SeizureService {
     }
 
     public Seizures getSeizureById(int id){
-        return this.seizuresDAO.getStudentById(id);
+        return this.seizuresDAO.getSeizureById(id);
     }
 
 
@@ -32,7 +32,12 @@ public class SeizureService {
         this.seizuresDAO.deleteSeizureById(id);
     }
 
-    public void updateSeizure(Seizures seizure){
-        this.seizuresDAO.updateSeizure(seizure);
+    public void updateSeizure(Seizures seizures){
+        this.seizuresDAO.updateSeizure(seizures);
+    }
+
+
+    public void insertSeizure(Seizures seizures) {
+        seizuresDAO.insertSeizure(seizures);
     }
 }
