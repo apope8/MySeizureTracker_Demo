@@ -71,12 +71,12 @@ public class SeizureSQLDao implements SeizuresDAO {
         final String timeOfDay = seizure.getTimeOfDay();
         final String seizureTrigger = seizure.getTrigger();
         final String description = seizure.getDescription();
-        jdbcTemplate.update(sql, new Object[]{id, seizureType, seizureDate, timeOfDay, seizureTrigger, description});
+        jdbcTemplate.update(sql, new Object[]{seizureType, seizureDate, timeOfDay, seizureTrigger, description,id});
     }
 
     @Override
     public void insertSeizure(Seizures seizures) {
-        final String sql = "INSERT INTO seizure (seizureType, seizureDate, timeOfDay, seizureTrigger, description) VALUES(?,?,?,?,?)";
+        final String sql = "INSERT INTO seizures (seizureType, seizureDate, timeOfDay, seizureTrigger, description) VALUES(?,?,?,?,?)";
         final String seizureType = seizures.getSeizureType();
         final String seizureDate = seizures.getSeizureDate();
         final String timeOfDay = seizures.getTimeOfDay();
