@@ -16,7 +16,7 @@ import java.util.Collection;
 public class SeizureService {
 
     @Autowired                  //create instance of SeizuresDAO
-    @Qualifier("mongoData")      //Pick which DAO for spring to use
+    @Qualifier("mysql")      //Bean to Pick which DAO for spring to use
     private SeizuresDAO seizuresDAO;
 
     // call an instance of SeizureDAO and return the values returned by getAllSeizures

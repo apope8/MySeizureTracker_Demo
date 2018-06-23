@@ -19,7 +19,7 @@ public class Seizures {
     private String description;
     private String wereYouAlone;
 
-    public Seizures(int id) {}
+    public Seizures() {}
 
     //As there are no initial values for these datamembers we are just setting them to themselves using the "this" keyword
 
