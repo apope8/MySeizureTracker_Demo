@@ -57,16 +57,31 @@ public class SeizureSQLDao implements SeizuresDAO {
 
     @Override
     public void deleteSeizureById(int id) {
+        final String sql = "DELETE FROM seizures WHERE  Id = ?";
+        jdbcTemplate.update(sql, id);
 
     }
 
     @Override
     public void updateSeizure(Seizures seizure) {
-
+        final String sql = "UPDATE seizures SET seizureType = ?, seizureDate = ?, timeOfDay = ?, seizureTrigger = ?, description = ? WHERE id = ?";
+        final int id = seizure.getId();
+        final String seizureType = seizure.getSeizureType();
+        final String seizureDate = seizure.getSeizureDate();
+        final String timeOfDay = seizure.getTimeOfDay();
+        final String seizureTrigger = seizure.getTrigger();
+        final String description = seizure.getDescription();
+        jdbcTemplate.update(sql, new Object[]{id, seizureType, seizureDate, timeOfDay, seizureTrigger, description});
     }
 
     @Override
     public void insertSeizure(Seizures seizures) {
-
+        final String sql = "INSERT INTO seizure (seizureType, seizureDate, timeOfDay, seizureTrigger, description) VALUES(?,?,?,?,?)";
+        final String seizureType = seizures.getSeizureType();
+        final String seizureDate = seizures.getSeizureDate();
+        final String timeOfDay = seizures.getTimeOfDay();
+        final String seizureTrigger = seizures.getTrigger();
+        final String description = seizures.getDescription();
+        jdbcTemplate.update(sql, new Object[]{seizureType, seizureDate, timeOfDay, seizureTrigger, description});
     }
 }
