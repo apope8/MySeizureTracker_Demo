@@ -3,6 +3,7 @@ package com.mySeizureTracker.Service;
 import com.mySeizureTracker.DAO.SeizuresDAO;
 import com.mySeizureTracker.Entity.Seizures;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
@@ -14,8 +15,8 @@ import java.util.Collection;
 @Service        //tells spring that this class is a service
 public class SeizureService {
 
-    //create instance of SeizuresDAO
-    @Autowired
+    @Autowired                  //create instance of SeizuresDAO
+    @Qualifier("mongoData")      //Pick which DAO for spring to use
     private SeizuresDAO seizuresDAO;
 
     // call an instance of SeizureDAO and return the values returned by getAllSeizures

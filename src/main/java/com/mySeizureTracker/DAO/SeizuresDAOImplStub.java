@@ -1,6 +1,7 @@
 package com.mySeizureTracker.DAO;
 
 import com.mySeizureTracker.Entity.Seizures;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
@@ -14,6 +15,7 @@ import java.util.Map;
  */
 
 @Repository             //this lets spring know that this class is the storage
+@Qualifier("fakedata")            //give this DAO an id for the service to call
 public class SeizuresDAOImplStub implements SeizuresDAO {
 
     private static Map<Integer, Seizures> seizures;
