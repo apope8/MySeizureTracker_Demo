@@ -1,4 +1,4 @@
-package com.mySeizureTracker;
+package com.mySeizureTracker.DAO;
 
 import com.mySeizureTracker.DAO.SeizuresDAO;
 import com.mySeizureTracker.Entity.Seizures;
