@@ -1,8 +1,10 @@
 package com.mySeizureTracker.Service;
 
 import com.mySeizureTracker.DAO.MedicationDAO;
+import com.mySeizureTracker.DAO.MedicationDAOImplStub;
 import com.mySeizureTracker.Entity.Medication;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
@@ -11,14 +13,15 @@ import java.util.Collection;
 public class MedicationService {
 
     @Autowired
-    private MedicationDAO medicationDAO;
+    @Qualifier("FakeData")
+    private MedicationDAO  medicationDAO;
 
-    public Collection<Medication> getAllMedications(){
+    public Collection<Medication> getAllMedications() {
         return this.medicationDAO.getAllMedications();
     }
 
 
-    public Medication getMedicationById(int id){
+    public Medication getMedicationById(int id) {
         return this.medicationDAO.getMedicationById(id);
     }
 
@@ -26,7 +29,12 @@ public class MedicationService {
         this.medicationDAO.deleteMedication(id);
     }
 
-    public void updateMedication(Medication medication){
+    public void updateMedication(Medication medication) {
         this.medicationDAO.updateMedication(medication);
     }
+
+    public void insertMedication(Medication medication) {
+        medicationDAO.insertMedication(medication);
+    }
+
 }

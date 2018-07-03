@@ -34,4 +34,9 @@ public class MedicationController {
     public void updateMedication(@RequestBody Medication medication){
         medicationService.updateMedication(medication);
     }
+
+    @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+    public void insertMedication(@RequestBody Medication medication){
+        medicationService.insertMedication(medication);
+    }
 }
