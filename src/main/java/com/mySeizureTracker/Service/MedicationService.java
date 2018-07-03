@@ -22,4 +22,11 @@ public class MedicationService {
         return this.medicationDAO.getMedicationById(id);
     }
 
+    public void deleteMedication(int id) {
+        this.medicationDAO.deleteMedication(id);
+    }
+
+    public void updateMedication(Medication medication){
+        this.medicationDAO.updateMedication(medication);
+    }
 }
