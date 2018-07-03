@@ -14,7 +14,12 @@ public class MedicationService {
     private MedicationDAO medicationDAO;
 
     public Collection<Medication> getAllMedications(){
-        return medicationDAO.getAllMedications();
+        return this.medicationDAO.getAllMedications();
+    }
+
+
+    public Medication getMedicationById(int id){
+        return this.medicationDAO.getMedicationById(id);
     }
 
 }

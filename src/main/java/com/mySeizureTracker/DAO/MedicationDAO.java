@@ -26,4 +26,8 @@ public class MedicationDAO {
         return this.medication.values();
     }
 
+    public Medication getMedicationById(int id){
+        return this.medication.get(id);
+    }
+
 }
