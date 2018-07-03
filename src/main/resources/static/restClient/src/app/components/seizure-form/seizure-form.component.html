@@ -1,0 +1,29 @@
+<div class="container">
+  <form>
+    <div class="form group">
+      <label for="id">Record Number</label>
+      <input type="text" name="Record" class="form-control" [(ngModel)]="seizures.id">
+    </div>
+    <div class="form group">
+      <label for="seizureType">Seizure type</label>
+      <input type="text" name="Type" class="form-control" [(ngModel)]="seizures.seizureType">
+    </div>
+    <div class="form group">
+      <label for="seizureDate">Seizure Date</label>
+      <input type="text" name="Date" class="form-control" [(ngModel)]="seizures.seizureDate">
+    </div>
+    <div class="form group">
+      <label for="timeOfDay">Time Of day</label>
+      <input type="text" name="Time" class="form-control" [(ngModel)]="seizures.timeOfDay">
+    </div>
+    <div class="form group">
+      <label for="trigger">Trigger</label>
+      <input type="text" name="Trigger" class="form-control" [(ngModel)]="seizures.trigger">
+    </div>
+    <div class="form group">
+      <label for="description">Descripton</label>
+      <input type="text" name="Descripton" class="form-control" [(ngModel)]="seizures.description">
+    </div>
+    <input type="submit" value="save" class="btn btn-success">
+  </form>
+</div>

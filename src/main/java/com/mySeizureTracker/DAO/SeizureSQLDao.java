@@ -1,6 +1,5 @@
 package com.mySeizureTracker.DAO;
 
-import com.mySeizureTracker.DAO.SeizuresDAO;
 import com.mySeizureTracker.Entity.Seizures;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;

@@ -1,0 +1,28 @@
+<!-- <div class="container"> -->
+<table class="table table-striped">
+  <thead>
+    <th>Id</th>
+    <th>Seizure Date</th>
+    <th>Seizure Type</th>
+    <th>Time Of Day</th>
+    <th>Trigger</th>
+    <th>Description</th>
+    <th>Operations</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let Seizures of seiz">
+      <td>{{Seizures.id}}</td>
+      <td>{{Seizures.seizureDate}}</td>
+      <td>{{Seizures.seizureType}}</td>
+      <td>{{Seizures.timeOfDay}}</td>
+      <td>{{Seizures.trigger}}</td>
+      <td class="span4"><span class="hideOverFlow">{{Seizures.description}}</span></td>
+      <td>
+        <button class="btn btn-danger" (click)="deleteSeizure(Seizures)">DELETE</button>
+        <button class="btn btn-primary" (click)="updateSeizure(Seizures)">EDIT</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<button class="btn btn-primary" (click)="newSeizure()">New Record</button>
+<!-- </div> -->
