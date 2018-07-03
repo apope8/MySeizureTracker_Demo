@@ -1,54 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2eb9401-1cd9-4d6f-b8da-83162ebcc528" name="Default" comment="Add angular - seizure components - seizure html&#10;Working Front End!">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/e2e/protractor.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/e2e/src/app.po.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/e2e/tsconfig.e2e.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/app.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/components/list-seizures/list-seizures.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/components/list-seizures/list-seizures.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/components/list-seizures/list-seizures.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/components/list-seizures/list-seizures.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/components/seizure-form/seizure-form.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/components/seizure-form/seizure-form.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/components/seizure-form/seizure-form.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/components/seizure-form/seizure-form.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/seizures.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/shared_service/seizure.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/shared_service/seizure.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/browserslist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/src/tslint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/restClient/tslint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="d2eb9401-1cd9-4d6f-b8da-83162ebcc528" name="Default" comment="Merge Angular Branch with Master">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Controller/SeizureController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Controller/SeizureController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/DAO/SeizureSQLDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/DAO/SeizureSQLDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mySeizureTracker/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mySeizureTracker/Application.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mySeizureTracker/Controller/SeizureController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mySeizureTracker/Controller/SeizureController.class" afterDir="false" />
     </list>
@@ -82,7 +36,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Medication_Branch" />
       </map>
     </option>
   </component>
@@ -1291,11 +1245,18 @@
       <option name="project" value="LOCAL" />
       <updated>1529961050334</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Merge Angular Branch with Master">
+      <created>1530616280771</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1530616280771</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40605000" />
+    <option name="totallyTimeSpent" value="40982000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="997" extended-state="6" />
@@ -1305,6 +1266,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="TypeScript" order="8" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1354,7 +1316,6 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="TypeScript" order="8" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="bottom" id="Spring" order="9" />
@@ -1384,7 +1345,8 @@
     <MESSAGE value="Add angular - Routes and Components" />
     <MESSAGE value="Add angular - services" />
     <MESSAGE value="Add angular - seizure components - seizure html&#10;Working Front End!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add angular - seizure components - seizure html&#10;Working Front End!" />
+    <MESSAGE value="Merge Angular Branch with Master" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge Angular Branch with Master" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Entity/Seizures.java">
