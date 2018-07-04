@@ -13,7 +13,7 @@ import java.util.Collection;
 public class MedicationService {
 
     @Autowired
-    @Qualifier("FakeData")
+    @Qualifier("mmysql")
     private MedicationDAO  medicationDAO;
 
     public Collection<Medication> getAllMedications() {
