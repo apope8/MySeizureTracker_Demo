@@ -48,16 +48,32 @@ public class MedicationSQLDao implements MedicationDAO{
 
     @Override
     public void deleteMedication(int id) {
+        final String sql = "DELETE FROM Medication WHERE Medication_Id = ?";
+        jdbcTemplate.update(sql, id);
 
     }
 
     @Override
     public void updateMedication(Medication medication) {
+        final String sql = "UPDATE Medication SET Medication_Name = ?, Medication_Dosage = ?, Start_Date = ?, End_Date = ? WHERE Medication_Id = ?";
+        final int Medication_Id = medication.getId();
+        final String Medication_Name = medication.getMedicationName();
+        final String Medication_Dosage = medication.getDosage();
+        final String Start_Date = medication.getStartDate();
+        final String End_Date = medication.getEndDate();
+        jdbcTemplate.update(sql, new Object[]{Medication_Name, Medication_Dosage, Start_Date, End_Date, Medication_Id});
 
     }
 
     @Override
     public void insertMedication(Medication medication) {
+        final String sql = "INSERT INTO Medication (Medication_Name, Medication_Dosage, Start_Date, End_Date) VALUES (?,?,?,?)";
+        final String Medication_Name = medication.getMedicationName();
+        final String Medication_Dosage = medication.getDosage();
+        final String Start_Date = medication.getStartDate();
+        final String End_Date = medication.getEndDate();
+        jdbcTemplate.update(sql, new Object[]{Medication_Name, Medication_Dosage, Start_Date, End_Date});
+
 
     }
 }
