@@ -1,5 +1,6 @@
 package com.mySeizureTracker.Service;
 
+import com.mySeizureTracker.DAO.SeizureSQLDao;
 import com.mySeizureTracker.DAO.SeizuresDAO;
 import com.mySeizureTracker.Entity.Seizures;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,29 +17,28 @@ import java.util.Collection;
 public class SeizureService {
 
     @Autowired                  //create instance of SeizuresDAO
-    @Qualifier("mysql")      //Bean to Pick which DAO for spring to use
-    private SeizuresDAO seizuresDAO;
+    private SeizureSQLDao sqlDao;
 
     // call an instance of SeizureDAO and return the values returned by getAllSeizures
     public Collection<Seizures> getAllSeizures(){
-        return this.seizuresDAO.getAllSeizures();
+        return this.sqlDao.getAllSeizures();
     }
 
     public Seizures getSeizureById(int id){
-        return this.seizuresDAO.getSeizureById(id);
+        return this.sqlDao.getSeizureById(id);
     }
 
 
     public void deleteSeizureById(int id) {
-        this.seizuresDAO.deleteSeizureById(id);
+        this.sqlDao.deleteSeizureById(id);
     }
 
     public void updateSeizure(Seizures seizures){
-        this.seizuresDAO.updateSeizure(seizures);
+        this.sqlDao.updateSeizure(seizures);
     }
 
 
     public void insertSeizure(Seizures seizures) {
-        seizuresDAO.insertSeizure(seizures);
+        sqlDao.insertSeizure(seizures);
     }
 }

@@ -21,35 +21,59 @@ public class SeizureController {
     @Autowired                                  //instantiates the instance below so you do not need to add "= new InstanceName"
     private SeizureService seizureService;
 
-    @RequestMapping(method = RequestMethod.GET)     //tells spring that we will be using a get method to run this function
-    @CrossOrigin(origins = "http://localhost:4200", allowedHeaders = ("*"))
+//    @RequestMapping(method = RequestMethod.GET)     //tells spring that we will be using a get method to run this function
+//    @CrossOrigin(origins = "http://localhost:4200", allowedHeaders = ("*"))
+//    public Collection<Seizures> getAllSeizures(){
+//        return seizureService.getAllSeizures();
+//    }
+//
+//    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+//    @CrossOrigin(origins = "http://localhost:4200", allowedHeaders = ("*"))
+//    public Seizures getSeizureById(@PathVariable("id") int id){     //path variable retrieves the id entered into the url and assigns it to the int id variable
+//        return seizureService.getSeizureById(id);
+//    }
+//
+//    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+//    @CrossOrigin(origins = "http://localhost:4200", allowedHeaders = ("*"))
+//    public void deleteSeizureById(@PathVariable("id") int id){
+//        seizureService.deleteSeizureById(id);
+//    }
+//
+//    @RequestMapping(method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
+//    @CrossOrigin(origins = "http://localhost:4200", allowedHeaders = ("*"))
+//    public void updateSeizure(@RequestBody Seizures seizures){
+//        seizureService.updateSeizure(seizures);
+//    }
+//
+//    @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+//    @CrossOrigin(origins = "http://localhost:4200", allowedHeaders = ("*"))
+//    public void insertSeizure(@RequestBody Seizures seizures){
+//        seizureService.insertSeizure(seizures);
+//    }
+
+    @GetMapping()
     public Collection<Seizures> getAllSeizures(){
         return seizureService.getAllSeizures();
     }
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    @CrossOrigin(origins = "http://localhost:4200", allowedHeaders = ("*"))
-    public Seizures getSeizureById(@PathVariable("id") int id){     //path variable retrieves the id entered into the url and assigns it to the int id variable
+    @GetMapping("/{id}")
+    public Seizures getSeizureById(@PathVariable("id") int id) {
         return seizureService.getSeizureById(id);
     }
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-    @CrossOrigin(origins = "http://localhost:4200", allowedHeaders = ("*"))
-    public void deleteSeizureById(@PathVariable("id") int id){
-        seizureService.deleteSeizureById(id);
-    }
-
-    @RequestMapping(method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
-    @CrossOrigin(origins = "http://localhost:4200", allowedHeaders = ("*"))
-    public void updateSeizure(@RequestBody Seizures seizures){
-        seizureService.updateSeizure(seizures);
-    }
-
-    @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
-    @CrossOrigin(origins = "http://localhost:4200", allowedHeaders = ("*"))
+    @PostMapping
     public void insertSeizure(@RequestBody Seizures seizures){
         seizureService.insertSeizure(seizures);
     }
+
+    @PutMapping("/id")
+    public void updateSeizure(@RequestBody Seizures seizures) {
+        seizureService.updateSeizure(seizures);
+    }
+
+
+
+
 
 
 
