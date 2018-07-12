@@ -71,6 +71,11 @@ public class SeizureController {
         seizureService.updateSeizure(seizures);
     }
 
+    @DeleteMapping("/{id}")
+    public void deleteSeizureById(@PathVariable("id") int id){
+        seizureService.deleteSeizureById(id);
+    }
+
 
 
 
