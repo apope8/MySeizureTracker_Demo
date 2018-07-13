@@ -14,8 +14,10 @@ import java.util.Collection;
  */
 
 @RestController                                 //lets spring know that this class is a  rest controller. Adds @Controller and @ResponseBody Annotations
-@RequestMapping("/seizures")                    //tells spring what url to look for this class at
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = ("*"))
+//@RequestMapping("/seizures")                    //tells spring what url to look for this class at
+////@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = ("*"))
+//@CrossOrigin
+@CrossOrigin(origins = "http://localhost:4200")
 public class SeizureController {
 
     @Autowired                                  //instantiates the instance below so you do not need to add "= new InstanceName"
@@ -51,27 +53,27 @@ public class SeizureController {
 //        seizureService.insertSeizure(seizures);
 //    }
 
-    @GetMapping()
+    @GetMapping(value = "/seizures")
     public Collection<Seizures> getAllSeizures(){
         return seizureService.getAllSeizures();
     }
 
-    @GetMapping("/{id}")
+    @GetMapping(value = "/seizures/{id}")
     public Seizures getSeizureById(@PathVariable("id") int id) {
         return seizureService.getSeizureById(id);
     }
 
-    @PostMapping
+    @PostMapping(value = "/seizures")
     public void insertSeizure(@RequestBody Seizures seizures){
         seizureService.insertSeizure(seizures);
     }
 
-    @PutMapping("/id")
+    @PutMapping(value = "/seizures/id")
     public void updateSeizure(@RequestBody Seizures seizures) {
         seizureService.updateSeizure(seizures);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/seizures/{id}")
     public void deleteSeizureById(@PathVariable("id") int id){
         seizureService.deleteSeizureById(id);
     }

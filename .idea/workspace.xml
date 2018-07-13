@@ -1,15 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2eb9401-1cd9-4d6f-b8da-83162ebcc528" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/config/SwaggerConfig.java" afterDir="false" />
+    <list default="true" id="d2eb9401-1cd9-4d6f-b8da-83162ebcc528" name="Default" comment="Add delete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mySeizureTracker.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Controller/SeizureController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Controller/SeizureController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Service/SeizureService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Service/SeizureService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/e2e/tsconfig.e2e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/components/list-seizures/list-seizures.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/components/list-seizures/list-seizures.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/components/list-seizures/list-seizures.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/components/list-seizures/list-seizures.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/components/seizure-form/seizure-form.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/components/seizure-form/seizure-form.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/components/seizure-form/seizure-form.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/components/seizure-form/seizure-form.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/seizures.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/shared_service/seizure.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/shared_service/seizure.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/tslint.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mySeizureTracker/Controller/SeizureController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mySeizureTracker/Controller/SeizureController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mySeizureTracker/Service/SeizureService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mySeizureTracker/Service/SeizureService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,22 +59,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+            <state relative-caret-position="30">
+              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SwaggerConfig.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mySeizureTracker/config/SwaggerConfig.java">
+      <file leaf-file-name="SeizureController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Controller/SeizureController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+            <state relative-caret-position="335">
+              <caret line="75" column="29" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3195#3196#0" expanded="true" />
+                <element signature="e#3249#3250#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,11 +124,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/DAO/MongoMedicationDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Service/MedicationService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/DAO/MedicationSQLDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Controller/SeizureController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Service/SeizureService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Entity/Seizures.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/config/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Controller/SeizureController.java" />
       </list>
     </option>
   </component>
@@ -124,9 +163,7 @@
     </treeState>
   </component>
   <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/src/main/resources/static/restClient/package.json" />
-    </packageJsonPaths>
+    <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="89" />
@@ -142,6 +179,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,15 +220,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mySeizureTracker" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mySeizureTracker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mySeizureTracker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mySeizureTracker" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -198,17 +227,14 @@
               <item name="mySeizureTracker" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mySeizureTracker" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -371,11 +397,21 @@
       <updated>1531298319776</updated>
       <workItem from="1531298325111" duration="7981000" />
       <workItem from="1531388712454" duration="2581000" />
+      <workItem from="1531472775456" duration="2052000" />
+      <workItem from="1531489748700" duration="3701000" />
     </task>
+    <task id="LOCAL-00001" summary="Add delete">
+      <created>1531392655201</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1531392655201</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10562000" />
+    <option name="totallyTimeSpent" value="17649000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="997" extended-state="6" />
@@ -399,14 +435,14 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info active="true" anchor="bottom" id="Run Dashboard" order="8" sideWeight="0.4991708" visible="true" weight="0.3262159" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31944445" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31944445" />
       <window_info anchor="bottom" id="Spring" order="9" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32977462" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21227197" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21669431" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="3" side_tool="true" />
-      <window_info anchor="right" id="Google Cloud Storage" />
+      <window_info anchor="right" id="Google Cloud Storage" order="5" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -443,7 +479,8 @@
     <MESSAGE value="Add Medication Entity&#10;Add Medication Controller, DAO, Service&#10;Add in memory data for testing in DAO&#10;Add Spring boot annotations for REST API" />
     <MESSAGE value="Add get by id" />
     <MESSAGE value="Add delete and update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add delete and update" />
+    <MESSAGE value="Add delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add delete" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Application.java">
@@ -642,13 +679,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mySeizureTracker/SeizureSQLDao.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Controller/MedicationController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -708,44 +738,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Service/SeizureService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-          <folding>
-            <element signature="e#1121#1122#0" expanded="true" />
-            <element signature="e#1177#1178#0" expanded="true" />
-            <element signature="e#1230#1231#0" expanded="true" />
-            <element signature="e#1281#1282#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mySeizureTracker/DAO/SeizureSQLDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Entity/Medication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -753,12 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-          <folding>
-            <element signature="e#2155#2156#0" expanded="true" />
-            <element signature="e#2190#2191#0" expanded="true" />
-            <element signature="e#2246#2247#0" expanded="true" />
-            <element signature="e#2294#2295#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -769,24 +759,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Controller/SeizureController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3051#3052#0" expanded="true" />
-            <element signature="e#3105#3106#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mySeizureTracker/config/SwaggerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mySeizureTracker/DAO/SeizureSQLDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="69" column="56" lean-forward="true" selection-start-line="69" selection-start-column="56" selection-end-line="69" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Service/SeizureService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Controller/SeizureController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="75" column="29" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3195#3196#0" expanded="true" />
+            <element signature="e#3249#3250#0" expanded="true" />
           </folding>
         </state>
       </provider>
