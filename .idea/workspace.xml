@@ -1,52 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2eb9401-1cd9-4d6f-b8da-83162ebcc528" name="Default" comment="Add delete">
+    <list default="true" id="d2eb9401-1cd9-4d6f-b8da-83162ebcc528" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Controller/SeizureController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Controller/SeizureController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/e2e/protractor.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/e2e/src/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/e2e/src/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/e2e/tsconfig.e2e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/app.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/components/list-seizures/list-seizures.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/components/list-seizures/list-seizures.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/components/list-seizures/list-seizures.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/components/list-seizures/list-seizures.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/components/seizure-form/seizure-form.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/components/seizure-form/seizure-form.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/components/seizure-form/seizure-form.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/components/seizure-form/seizure-form.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/seizures.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/shared_service/seizure.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/app/shared_service/seizure.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/browserslist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/src/tslint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/restClient/tslint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mySeizureTracker/Controller/SeizureController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mySeizureTracker/Controller/SeizureController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/config/SwaggerConfig.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -68,15 +25,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SeizureController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SeizureController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Controller/SeizureController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="75" column="29" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
+            <state relative-caret-position="260">
+              <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3195#3196#0" expanded="true" />
-                <element signature="e#3249#3250#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SwaggerConfig.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mySeizureTracker/config/SwaggerConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="110" selection-start-line="20" selection-start-column="110" selection-end-line="20" selection-end-column="110" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,8 +94,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Service/SeizureService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Entity/Seizures.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/config/SwaggerConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Controller/SeizureController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mySeizureTracker/config/SwaggerConfig.java" />
       </list>
     </option>
   </component>
@@ -179,6 +146,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -220,6 +188,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mySeizureTracker" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mySeizureTracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mySeizureTracker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mySeizureTracker" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -234,7 +211,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -398,7 +374,8 @@
       <workItem from="1531298325111" duration="7981000" />
       <workItem from="1531388712454" duration="2581000" />
       <workItem from="1531472775456" duration="2052000" />
-      <workItem from="1531489748700" duration="3701000" />
+      <workItem from="1531489748700" duration="3807000" />
+      <workItem from="1531732789196" duration="1092000" />
     </task>
     <task id="LOCAL-00001" summary="Add delete">
       <created>1531392655201</created>
@@ -407,11 +384,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531392655201</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update Api paths">
+      <created>1531495290090</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1531495290090</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17649000" />
+    <option name="totallyTimeSpent" value="18847000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="997" extended-state="6" />
@@ -439,7 +423,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.31944445" />
       <window_info anchor="bottom" id="Spring" order="9" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32977462" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21669431" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21890548" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="3" side_tool="true" />
       <window_info anchor="right" id="Google Cloud Storage" order="5" />
@@ -480,7 +464,8 @@
     <MESSAGE value="Add get by id" />
     <MESSAGE value="Add delete and update" />
     <MESSAGE value="Add delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add delete" />
+    <MESSAGE value="Update Api paths" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Api paths" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Application.java">
@@ -718,9 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="74" column="105" selection-start-line="74" selection-start-column="105" selection-end-line="74" selection-end-column="105" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -759,23 +741,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mySeizureTracker/config/SwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mySeizureTracker/DAO/SeizureSQLDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="69" column="56" lean-forward="true" selection-start-line="69" selection-start-column="56" selection-end-line="69" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -802,12 +771,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mySeizureTracker/Controller/SeizureController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="75" column="29" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
+        <state relative-caret-position="260">
+          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3195#3196#0" expanded="true" />
-            <element signature="e#3249#3250#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mySeizureTracker/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="110" selection-start-line="20" selection-start-column="110" selection-end-line="20" selection-end-column="110" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
