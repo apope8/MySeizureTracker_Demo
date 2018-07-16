@@ -11,6 +11,13 @@ public class Medication {
     public Medication() {
     }
 
+    public Medication(String medicationName, String dosage, String startDate, String endDate) {
+        this.medicationName = medicationName;
+        this.dosage = dosage;
+        this.startDate = startDate;
+        this.endDate = endDate;
+    }
+
     public Medication(int id, String medicationName, String dosage, String startDate, String endDate) {
         this.id = id;
         this.medicationName = medicationName;
