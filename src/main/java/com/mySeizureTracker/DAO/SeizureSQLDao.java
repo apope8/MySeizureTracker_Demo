@@ -46,6 +46,40 @@ public class SeizureSQLDao implements SeizuresDAO {
         return seizure;
     }
 
+
+    public Collection<Seizures> groupByType(){
+        return jdbcTemplate.query("SELECT seizureType, count(seizureType) AS Total FROM seizures group by seizureType", new RowMapper<Seizures>(){
+            public Seizures mapRow(ResultSet rs, int rowNum) throws SQLException {
+                Seizures seizures = new Seizures();
+                seizures.setSeizureType(rs.getString("seizureType"));
+                seizures.setTotal(rs.getInt("Total"));
+                return seizures;
+            }
+        });
+    }
+
+    public Collection<Seizures> groupByTimeOfDay(){
+        return jdbcTemplate.query("SELECT timeOfDay, count(timeOfDay) AS Total FROM seizures group by timeOfDay;", new RowMapper<Seizures>(){
+            public Seizures mapRow(ResultSet rs, int rowNum) throws SQLException {
+                Seizures seizures = new Seizures();
+                seizures.setTimeOfDay(rs.getString("timeOfDay"));
+                seizures.setTotal(rs.getInt("Total"));
+                return seizures;
+            }
+        });
+    }
+
+    public Collection<Seizures> groupByTrigger(){
+        return jdbcTemplate.query("SELECT seizureTrigger, count(seizureTrigger) AS Total FROM seizures group by seizureTrigger;", new RowMapper<Seizures>(){
+            public Seizures mapRow(ResultSet rs, int rowNum) throws SQLException {
+                Seizures seizures = new Seizures();
+                seizures.setTrigger(rs.getString("seizureTrigger"));
+                seizures.setTotal(rs.getInt("Total"));
+                return seizures;
+            }
+        });
+    }
+
     @Override
     public Seizures getSeizureById(int id) {
         final String sql = "SELECT id, seizureType, seizureDate, timeOfDay, seizureTrigger, description FROM seizures WHERE id = ?";

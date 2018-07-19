@@ -29,6 +29,21 @@ public class SeizureController {
         return seizureService.getAllSeizures();
     }
 
+    @GetMapping(value = "/seizures/type")
+    public Collection<Seizures> groupByType(){
+        return seizureService.groupByType();
+    }
+
+    @GetMapping(value = "/seizures/tod")
+    public Collection<Seizures> groupByTimeOfDay(){
+        return seizureService.groupByTimeOfDay();
+    }
+
+    @GetMapping(value = "/seizures/trigger")
+    public Collection<Seizures> groupByTrigger(){
+        return seizureService.groupByTrigger();
+    }
+
     @GetMapping(value = "/seizures/{id}")
     public Seizures getSeizureById(@PathVariable("id") int id) {
         return seizureService.getSeizureById(id);
