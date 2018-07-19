@@ -41,4 +41,16 @@ public class SeizureService {
     public void insertSeizure(Seizures seizures) {
         sqlDao.insertSeizure(seizures);
     }
+
+    public Collection<Seizures> groupByType(){
+        return this.sqlDao.groupByType();
+    }
+
+    public Collection<Seizures> groupByTimeOfDay(){
+        return this.sqlDao.groupByTimeOfDay();
+    }
+
+    public Collection<Seizures> groupByTrigger(){
+        return this.sqlDao.groupByTrigger();
+    }
 }

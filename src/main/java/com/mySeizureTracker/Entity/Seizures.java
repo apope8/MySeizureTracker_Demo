@@ -18,13 +18,14 @@ public class Seizures {
     private String trigger;
     private String description;
     private String wereYouAlone;
+    private int total;
 
     public Seizures() {}
 
     //As there are no initial values for these datamembers we are just setting them to themselves using the "this" keyword
 
 
-    public Seizures(int id, String seizureType, String seizureDate, String timeOfDay, String trigger, String description,  String wereYouAlone) {
+    public Seizures(int id, String seizureType, String seizureDate, String timeOfDay, String trigger, String description,  String wereYouAlone, int total) {
         this.id = id;
         this.seizureType = seizureType;
         this.seizureDate = seizureDate;
@@ -32,6 +33,7 @@ public class Seizures {
         this.trigger = trigger;
         this.description = description;
         this.wereYouAlone = wereYouAlone;
+        this.total = total;
     }
 
     public int getId() {
@@ -82,6 +84,13 @@ public class Seizures {
         this.description = description;
     }
 
+    public int getTotal() {
+        return total;
+    }
+
+    public void setTotal(int total) {
+        this.total = total;
+    }
 
     public String isWereYouAlone() {
         return wereYouAlone;
