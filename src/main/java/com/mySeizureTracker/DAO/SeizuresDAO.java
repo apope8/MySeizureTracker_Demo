@@ -1,5 +1,9 @@
 package com.mySeizureTracker.DAO;
 
+/**
+ * This file acts as a reference that will be extended upon in SeizureSQLDAO
+ */
+
 import com.mySeizureTracker.Entity.Seizures;
 
 import java.util.Collection;

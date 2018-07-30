@@ -1,5 +1,8 @@
 package com.mySeizureTracker.DAO;
 
+/**
+ * This class holds the sql statements that will query / amend our database for the users requests
+ */
 
 import com.mySeizureTracker.Entity.Medication;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,12 +15,13 @@ import java.sql.SQLException;
 import java.util.Collection;
 import java.util.List;
 
-@Repository("mmysql")
+@Repository("mmysql")           //Give this repository an id for qualifier. Testing purposes
 public class MedicationSQLDao implements MedicationDAO{
 
-    @Autowired
+    @Autowired                  //instantiate the class by injection
     private JdbcTemplate jdbcTemplate;
 
+    //Create class to hold Row mapper parameters to avoid duplicating code
     private static class MedicationRowMapper implements RowMapper<Medication>{
 
         @Override
@@ -33,28 +37,28 @@ public class MedicationSQLDao implements MedicationDAO{
     }
 
     @Override
-    public Collection<Medication> getAllMedications() {
+    public Collection<Medication> getAllMedications() {      //Return all records from the medication table in the database
         final String sql = "SELECT Medication_Id, Medication_Name, Medication_Dosage, Start_Date, End_Date FROM Medication";
         List<Medication> medicationsql = jdbcTemplate.query(sql,new MedicationRowMapper());
         return medicationsql;
     }
 
     @Override
-    public Medication getMedicationById(int id) {
+    public Medication getMedicationById(int id) {           //Return a record from the medication table in the database that match a passed in id
         final String sql = "SELECT Medication_Id, Medication_Name, Medication_Dosage, Start_Date, End_Date FROM Medication WHERE Medication_Id = ?";
         final Medication medicationsql = jdbcTemplate.queryForObject(sql, new MedicationRowMapper(), id);
         return medicationsql;
     }
 
     @Override
-    public void deleteMedication(int id) {
+    public void deleteMedication(int id) {                  //Delete a record from the medication table in the database that match a passed in id
         final String sql = "DELETE FROM Medication WHERE Medication_Id = ?";
         jdbcTemplate.update(sql, id);
 
     }
 
     @Override
-    public void updateMedication(Medication medication) {
+    public void updateMedication(Medication medication) {       //Update a record from the medication table in the database that match a passed in id
         final String sql = "UPDATE Medication SET Medication_Name = ?, Medication_Dosage = ?, Start_Date = ?, End_Date = ? WHERE Medication_Id = ?";
         final int Medication_Id = medication.getId();
         final String Medication_Name = medication.getMedicationName();
@@ -66,7 +70,7 @@ public class MedicationSQLDao implements MedicationDAO{
     }
 
     @Override
-    public void insertMedication(Medication medication) {
+    public void insertMedication(Medication medication) {       //Insert a record into the medication table in the database
         final String sql = "INSERT INTO Medication (Medication_Name, Medication_Dosage, Start_Date, End_Date) VALUES (?,?,?,?)";
         final String Medication_Name = medication.getMedicationName();
         final String Medication_Dosage = medication.getDosage();

@@ -1,3 +1,11 @@
+///**
+// * purpose of this file is to store data in memory to test the app
+// * DAO is a Data Access Object
+// * It provides an interface to a database for use with the app
+// */
+
+
+
 //package com.mySeizureTracker.DAO;
 //
 //import com.mySeizureTracker.Entity.Seizures;
@@ -8,11 +16,6 @@
 //import java.util.HashMap;
 //import java.util.Map;
 //
-///**
-// * purpose of this file is to store data in memory to test the app
-// * DAO is a Data Access Object
-// * It provides an interface to a database for use with the app
-// */
 //
 //@Repository             //this lets spring know that this class is the storage
 //@Qualifier("fakedata")            //give this DAO an id for the service to call

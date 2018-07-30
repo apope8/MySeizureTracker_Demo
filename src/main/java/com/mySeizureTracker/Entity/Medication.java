@@ -1,5 +1,12 @@
 package com.mySeizureTracker.Entity;
 
+/**
+ * Creating the Medication entity.
+ * This holds the datamemebers for the medication class
+ * This also holds the constructor and an empty constructor for use with Spring Boot to create a new instance of the medication class without parameters
+ * This also holds the getters and setters that will be used to enter and retrieve data
+ */
+
 public class Medication {
 
     private int id;
