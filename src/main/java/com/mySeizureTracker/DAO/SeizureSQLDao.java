@@ -16,7 +16,7 @@ import java.util.List;
  */
 
 
-@Repository("mysql")                                    //Give this repository an id
+@Repository("mysql")                                    //Give this repository an id for qualifier. Testing purposes
 public class SeizureSQLDao implements SeizuresDAO {
 
     @Autowired                                          //instantiate the class by injection
@@ -40,14 +40,14 @@ public class SeizureSQLDao implements SeizuresDAO {
 
 
     @Override
-    public Collection<Seizures> getAllSeizures() {      //Get all records from the database
+    public Collection<Seizures> getAllSeizures() {      //Get all records from the seizure table in the dateabse
         final String sql = "SELECT id, seizureType, seizureDate, timeOfDay, seizureTrigger, description FROM  seizures;";
         List<Seizures> seizure = jdbcTemplate.query(sql, new SeizureRowMapper());
         return seizure;
     }
 
 
-    public Collection<Seizures> groupByType(){
+    public Collection<Seizures> groupByType(){         //Return all records from the seizure table in the db and group by seizureType column. For chart purposes
         return jdbcTemplate.query("SELECT seizureType, count(seizureType) AS Total FROM seizures group by seizureType", new RowMapper<Seizures>(){
             public Seizures mapRow(ResultSet rs, int rowNum) throws SQLException {
                 Seizures seizures = new Seizures();
@@ -58,7 +58,7 @@ public class SeizureSQLDao implements SeizuresDAO {
         });
     }
 
-    public Collection<Seizures> groupByTimeOfDay(){
+    public Collection<Seizures> groupByTimeOfDay(){     //Return all records from the seizure table in the db and group by timeOfDay column. For chart purposes
         return jdbcTemplate.query("SELECT timeOfDay, count(timeOfDay) AS Total FROM seizures group by timeOfDay;", new RowMapper<Seizures>(){
             public Seizures mapRow(ResultSet rs, int rowNum) throws SQLException {
                 Seizures seizures = new Seizures();
@@ -69,7 +69,7 @@ public class SeizureSQLDao implements SeizuresDAO {
         });
     }
 
-    public Collection<Seizures> groupByTrigger(){
+    public Collection<Seizures> groupByTrigger(){       //Return all records from the seizure table in the db and group by seizureTrigger column. For chart purposes
         return jdbcTemplate.query("SELECT seizureTrigger, count(seizureTrigger) AS Total FROM seizures group by seizureTrigger;", new RowMapper<Seizures>(){
             public Seizures mapRow(ResultSet rs, int rowNum) throws SQLException {
                 Seizures seizures = new Seizures();
@@ -81,7 +81,7 @@ public class SeizureSQLDao implements SeizuresDAO {
     }
 
     @Override
-    public Seizures getSeizureById(int id) {
+    public Seizures getSeizureById(int id) {        //return a record from the seizure table in the db that matches a passed in id
         final String sql = "SELECT id, seizureType, seizureDate, timeOfDay, seizureTrigger, description FROM seizures WHERE id = ?";
         Seizures seizure = jdbcTemplate.queryForObject(sql, new SeizureRowMapper(), id);
 
@@ -89,14 +89,14 @@ public class SeizureSQLDao implements SeizuresDAO {
     }
 
     @Override
-    public void deleteSeizureById(int id) {
+    public void deleteSeizureById(int id) {         //delete a record from the seizure table in the db that matches a passed in id
         final String sql = "DELETE FROM seizures WHERE  Id = ?";
         jdbcTemplate.update(sql, id);
 
     }
 
     @Override
-    public void updateSeizure(Seizures seizure) {
+    public void updateSeizure(Seizures seizure) {   //update a record from the seizure table in the db that matches a passed in id
         final String sql = "UPDATE seizures SET seizureType = ?, seizureDate = ?, timeOfDay = ?, seizureTrigger = ?, description = ? WHERE id = ?";
         final int id = seizure.getId();
         final String seizureType = seizure.getSeizureType();
@@ -108,7 +108,7 @@ public class SeizureSQLDao implements SeizuresDAO {
     }
 
     @Override
-    public void insertSeizure(Seizures seizures) {
+    public void insertSeizure(Seizures seizures) {      //insert a a record from the seizure table into the db
         final String sql = "INSERT INTO seizures (seizureType, seizureDate, timeOfDay, seizureTrigger, description) VALUES(?,?,?,?,?)";
         final String seizureType = seizures.getSeizureType();
         final String seizureDate = seizures.getSeizureDate();

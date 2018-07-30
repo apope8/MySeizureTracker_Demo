@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import java.util.Collection;
 
 /**
- * purpose of the service is to retrieve the data from the database
+ * purpose of the service is to retrieve the data from the database using the SeizureSQLDAO
  */
 
 @Service        //tells spring that this class is a service
