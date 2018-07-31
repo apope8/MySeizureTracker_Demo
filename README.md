@@ -1,4 +1,4 @@
-# My Seizure Tracker
+# My Seizure Tracker - Rest Service Application
 
 Spring Boot Restful Service for My Seizure Tracker application
 
