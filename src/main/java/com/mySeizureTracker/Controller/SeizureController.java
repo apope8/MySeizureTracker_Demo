@@ -14,38 +14,39 @@ import java.util.Collection;
  */
 
 @RestController                                 //lets spring know that this class is a  rest controller. Adds @Controller and @ResponseBody Annotations
+//@RequestMapping("/seizures")         //Sets the url address where the data will be retrieved from
 @CrossOrigin("*")
 public class SeizureController {
 
     @Autowired                                  //instantiates the instance below so you do not need to add "= new InstanceName"
     private SeizureService seizureService;
 
-    @GetMapping(value = "/seizures")            //Tells spring that this data can be retrieved via a GET request and requests an additional parameter for id
+    @GetMapping           //Tells spring that this data can be retrieved via a GET request and requests an additional parameter for id
     public Collection<Seizures> getAllSeizures(){
         return seizureService.getAllSeizures();
     }
 
-    @GetMapping(value = "/seizures/type")
+    @GetMapping(value = "/type")
     public Collection<Seizures> groupByType(){
         return seizureService.groupByType();
     }
 
-    @GetMapping(value = "/seizures/tod")
+    @GetMapping(value = "/tod")
     public Collection<Seizures> groupByTimeOfDay(){
         return seizureService.groupByTimeOfDay();
     }
 
-    @GetMapping(value = "/seizures/trigger")
+    @GetMapping(value = "/trigger")
     public Collection<Seizures> groupByTrigger(){
         return seizureService.groupByTrigger();
     }
 
-    @GetMapping(value = "/seizures/{id}")               //Tells spring that this data can be retrieved via a GET request and requests an additional parameter for id
+    @GetMapping(value = "/{id}")               //Tells spring that this data can be retrieved via a GET request and requests an additional parameter for id
     public Seizures getSeizureById(@PathVariable("id") int id) {
         return seizureService.getSeizureById(id);
     }
 
-    @PostMapping(value = "/seizures")                   //Tells spring that this data can be created via a POST request
+    @PostMapping               //Tells spring that this data can be created via a POST request
     public void insertSeizure(@RequestBody Seizures seizures){
         seizureService.insertSeizure(seizures);
     }
@@ -58,7 +59,7 @@ public class SeizureController {
 
 
 
-    @DeleteMapping(value = "/seizures/{id}")            //Tells spring that this data can be removed via a Delete request and requests an additional parameter for id
+    @DeleteMapping(value = "/id}")            //Tells spring that this data can be removed via a Delete request and requests an additional parameter for id
     public void deleteSeizureById(@PathVariable("id") int id){
         seizureService.deleteSeizureById(id);
     }
