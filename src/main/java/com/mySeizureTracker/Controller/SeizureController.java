@@ -14,7 +14,7 @@ import java.util.Collection;
  */
 
 @RestController                                 //lets spring know that this class is a  rest controller. Adds @Controller and @ResponseBody Annotations
-//@RequestMapping("/seizures")         //Sets the url address where the data will be retrieved from
+@RequestMapping("/seizures")         //Sets the url address where the data will be retrieved from
 @CrossOrigin("*")
 public class SeizureController {
 
